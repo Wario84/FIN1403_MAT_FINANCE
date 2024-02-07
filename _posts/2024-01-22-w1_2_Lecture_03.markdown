@@ -16,6 +16,7 @@ mermaid: true
 **Tema 2: Interés Simple.**
 
 2.1 Interés Simple.
+
 2.2 Descuento Simple.
 
 # Presentación
