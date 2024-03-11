@@ -77,7 +77,10 @@ Y calcula el rendimiento diario para cada uno de tus stocks.
 
 Aquí tienes un ejemplo de como hacerlo:
 
-![](https://github.com/Wario84/blog/raw/main/assets/imgs/02_04_FIN1403.gif?raw=true)<!-- -->
+
+<a href="https://github.com/Wario84/blog/raw/main/assets/imgs/02_04_FIN1403.gif?raw=true" download>
+  Descargar Paso 2
+</a>
 
 Asume que invertiste 1000 USD en cada uno de tus stocks y calcula el rendimiento diario usando la fórmula del interés compuesto:
 
@@ -87,7 +90,13 @@ Toma en cuenta que el interés se capitaliza de forma diaria y la tasa de inter�
 
 Aquí tienes un ejemplo de como hacerlo:
 
-![](https://github.com/Wario84/blog/raw/main/assets/imgs/03_04_FIN1403.gif?raw=true)<!-- -->
+
+<a href="https://github.com/Wario84/blog/raw/main/assets/imgs/03_04_FIN1403.gif?raw=true" download>
+  Descargar Paso 3
+</a>
+
+
+
 
 
 
