@@ -2,7 +2,7 @@
 
 layout: post
 title: "Lecture 2: Progresión Geométrica."
-author: "Mario H. Gonzalez-Sauri"
+author: "Mario H. González-Sauri"
 date: "2024-01-17"
 mermaid: true
 

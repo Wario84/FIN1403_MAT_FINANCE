@@ -2,7 +2,7 @@
 
 layout: post
 title: "Lecture 5: Interés Simple con Pagos Periódicos"
-author: "Mario H. Gonzalez-Sauri"
+author: "Mario H. González-Sauri"
 date: "2024-02-07"
 mermaid: true
 

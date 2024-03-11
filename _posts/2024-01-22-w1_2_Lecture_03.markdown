@@ -2,7 +2,7 @@
 
 layout: post
 title: "Lecture 4: Interés y Descuento Simple."
-author: "Mario H. Gonzalez-Sauri"
+author: "Mario H. González-Sauri"
 date: "2024-01-30"
 mermaid: true
 
