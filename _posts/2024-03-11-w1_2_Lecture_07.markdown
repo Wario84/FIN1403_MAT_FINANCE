@@ -65,7 +65,7 @@ Después de haber investigado sobre estas empresas y selecciones 3 de ellas, cre
 Aquí tienes un ejemplo de como hacerlo:
 
 
-<a href="https://github.com/Wario84/blog/raw/main/assets/imgs/01_04_FIN1403.gif" download>
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/assets/imgs/01_04_FIN1403.gif?raw=true" download>
   Descargar Paso 1
 </a>
 
