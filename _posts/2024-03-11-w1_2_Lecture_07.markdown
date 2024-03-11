@@ -1,26 +1,109 @@
 ---
 
 layout: post
-title: "Lecture 6: Interés Compuesto"
-author: "Mario H. Gonzalez-Sauri"
-date: "2024-02-19"
+title: "Tarea 4: Análisis del Top-20: S&P500"
+author: "Mario H. González-Sauri"
+date: "2024-03-11"
 mermaid: true
 
 ---
 
 <!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
 
-# Temas
 
+## Introducción
 
+El objetivo de esta tarea es usar las herramientas financieras aprendidas para elaborar un análisis del rendimiento de 3 stocks (acciones) del Top-20 del índice S&P 500 de tu preferencia.
 
-**Tema 3: Interés Compuesto.**
-# Presentación
+## 1. Descarga los datos.
 
+Descarga los datos del repositorio:
 
-[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/FIN1403_06.html)
-
-
-<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_06.html" download>
-  Bajar Presentación
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/assets/resources/sp500_top20_v2.zip" download>
+Descargar los datos.
 </a>
+
+
+## 2. Selecciona 3 Stocks de tu preferencia.
+
+Investiga los símbolos de las empresas en la base de datos y elige 3 empresas de tu preferencia. Te invito a elegir empresas que sean de tu interés y te motive aprender de ellas. En tu reporte debes escribir una descripción concisa de cada una de las siguientes características:
+
+
+| Aspecto | Descripción |
+|-----------------------|-------------|
+| Descripción | Un breve resumen de lo que hace la empresa. |
+| Productos principales | Los principales bienes o servicios que ofrece la empresa. |
+| Clientes | Quiénes son los clientes de la empresa. |
+| Ventajas Competitivas | Fortalezas únicas que diferencian a la empresa de sus competidores. |
+| Desempeño financiero | Indicadores clave de la rentabilidad de la empresa, como ingresos y utilidad neta. |
+| Posición de mercado | El rango o estatus de la empresa dentro de su industria. |
+| Tendencias de la industria | Tendencias de crecimiento actuales y cómo la empresa está posicionada para beneficiarse de ellas. |
+| Equipo directivo | La trayectoria y estrategia de la dirección de la empresa. |
+| Factores de riesgo | Posibles desafíos o amenazas que enfrenta la empresa. |
+| Capitalización de mercado | El valor total en dólares de todas las acciones en circulación de una empresa. |
+| Número de empleados | Cuántas personas emplea la empresa. |
+| Años de Operación | Cuánto tiempo lleva la empresa en el negocio. |
+| Presencia en Diferentes Países | El número de países donde opera la empresa. |
+
+
+## 3. Calcula el rendimiento diario de cada uno de tus Stocks.
+
+Después de haber investigado sobre estas empresas y selecciones 3 de ellas, crea un libro nuevo para los datos de cada stock. Recuerda que las observaciones (filas) son días y las columnas despliegan esta información:
+
+
+
+| Columna        | Descripción                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| Symbol         | El símbolo de la acción.                                         |
+| TSLA.Open      | El precio de apertura de las acciones.                            |
+| TSLA.High      | El precio más alto alcanzado durante el día para las acciones.   |
+| TSLA.Low       | El precio más bajo alcanzado durante el día para las acciones.   |
+| TSLA.Close     | El precio de cierre de las acciones.                              |
+| TSLA.Volume    | El volumen de operaciones (número de acciones negociadas).     |
+| TSLA.Adjusted  | El precio ajustado de las acciones.                               |
+
+Aquí tienes un ejemplo de como hacerlo:
+
+![](https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/resources/01_04_FIN1403.gif?raw=true)
+
+
+
+Usa la siguiente fórmula del Holding Period Return (HPR):
+
+$$HPR = \frac{\text{Valor Final} - \text{Valor Inicial}}{\text{Valor Inicial}}$$
+
+Y calcula el rendimiento diario para cada uno de tus stocks.
+
+Aquí tienes un ejemplo de como hacerlo:
+
+![](https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/resources/02_04_FIN1403.gif?raw=true)
+
+Asume que invertiste 1000 USD en cada uno de tus stocks y calcula el rendimiento diario usando la fórmula del interés compuesto:
+
+$$A_t= P(1+r)^t$$
+
+Toma en cuenta que el interés se capitaliza de forma diaria y la tasa de interés es variable de acuerdo a tus cálculos del HPR.
+
+Aquí tienes un ejemplo de como hacerlo:
+![](https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/resources/03_04_FIN1403.gif?raw=true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
