@@ -64,9 +64,7 @@ Después de haber investigado sobre estas empresas y selecciones 3 de ellas, cre
 
 Aquí tienes un ejemplo de como hacerlo:
 
-![](https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/imgs/01_04_FIN1403.gif?raw=true)<!-- -->
-
-![](https://github.com/Wario84/blog/raw/main/assets/imgs/USD.SEK_SMA_3.gif?raw=true)<!-- -->
+![](https://github.com/Wario84/blog/raw/main/assets/imgs/01_04_FIN1403.gif?raw=true)<!-- -->
 
 Usa la siguiente fórmula del Holding Period Return (HPR):
 
@@ -76,7 +74,7 @@ Y calcula el rendimiento diario para cada uno de tus stocks.
 
 Aquí tienes un ejemplo de como hacerlo:
 
-![]((https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/imgs/02_04_FIN1403.gif?raw=true)<!-- -->
+![](https://github.com/Wario84/blog/raw/main/assets/imgs/02_04_FIN1403.gif?raw=true)<!-- -->
 
 Asume que invertiste 1000 USD en cada uno de tus stocks y calcula el rendimiento diario usando la fórmula del interés compuesto:
 
@@ -86,7 +84,7 @@ Toma en cuenta que el interés se capitaliza de forma diaria y la tasa de inter�
 
 Aquí tienes un ejemplo de como hacerlo:
 
-![]((https://github.com/Wario84/FIN1403_MAT_FINANCE/tree/master/assets/imgs/03_04_FIN1403.gif?raw=true)<!-- -->
+![](https://github.com/Wario84/blog/raw/main/assets/imgs/03_04_FIN1403.gif?raw=true)<!-- -->
 
 
 
