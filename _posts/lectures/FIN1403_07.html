@@ -3577,11 +3577,72 @@ amount_r_prime</pre>
 
 <pre >## [1] 0.1490778</pre>
 
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio">
+
+<ul>
+<li><p>La <strong>Tasa de Interés Promedio</strong> es una medida útil cuando se tienen varias tasas de interés aplicables a un préstamo o inversión durante diferentes períodos.</p></li>
+<li><p>Se calcula como el promedio ponderado de las tasas de interés, donde los pesos son los períodos de tiempo durante los cuales se aplican las tasas respectivas.</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-1">
+
+<p>La fórmula para la tasa de interés promedio es:</p>
+
+<p>\[
+r_{avg} = \frac{\sum_{k=1}^{n} r_k \cdot t_k}{\sum_{k=1}^{n} t_k}
+\]</p>
+
+<p>donde:</p>
+
+<ul>
+<li><p>\(r_{avg}\) es la tasa de interés promedio.</p></li>
+<li><p>\(r_k\) es la tasa de interés durante el período \(k\).</p></li>
+<li><p>\(t_k\) es la duración del período \(k\).</p></li>
+<li><p>\(n\) es el número total de períodos.</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-2">
+
+<ul>
+<li>La tasa de interés promedio funciona directamente para el interés simple.</li>
+<li>Para el interés compuesto funciona si los periodos de capitalización iguales entre las diferentes tasas de interés.</li>
+<li>En caso de tener tasas de interes compuesto en diferentes periodos de capitalización, se puede calulcar la TIE anualizada, y sacar el promedio de estas tasas.</li>
+<li>Si las opciones de interes compuesto están en el mismo periodo de capitalización entonces se puede calcular directamente el interés promedio.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio, Ejemplo (1/1)</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-ejemplo-11">
+
+<p>Supongamos que tienes un préstamo con una tasa de interés simple del 5% durante los primeros dos años y del 6% durante los siguientes tres años. ¿Cuál es la tasa de interés promedio?</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio, Ejemplo (2/1)</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-ejemplo-21">
+
+<ul>
+<li>La tasa de interés promedio:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>(0.05*2 + 0.06*3) / (2 + 3)</pre>
+
+<pre >## [1] 0.056</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio, Ejemplo (1/2)</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-ejemplo-12">
+
+<p>Para un préstamo con una tasa de interés simple del 7% anual durante los primeros seis meses y del 8% anual durante los siguientes seis meses. ¿Cuál es la tasa de interés promedio?</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.1 Tasa de Interés Promedio, Ejemplo (2/2)</h2></hgroup><article  id="tema-4.1-tasa-de-interés-promedio-ejemplo-22">
+
+<ul>
+<li>La tasa de interés promedio:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>(0.07*0.5 + 0.08*0.5) / (0.5 + 0.5)</pre>
+
+<pre >## [1] 0.075</pre>
+
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Revisión</h2></hgroup><article  id="revisión">
 
 </article></slide><slide class=""><hgroup><h2>Revisión</h2></hgroup><article  id="revisión-1">
 
-<pre >## Versión: 19/03/2024</pre>
+<pre >## Versión: 21/03/2024</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Bibliografía</h2></hgroup><article  id="bibliografía">
 
