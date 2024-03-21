@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 7: Tasas de Interés: De Nominal, Efectiva y Equivalente."
+title: "Lecture 7: Tasas de Interés: De Nominal, Efectiva, Equivalente y Promedio."
 author: "Mario H. González-Sauri"
 date: "2024-03-19"
 mermaid: true
