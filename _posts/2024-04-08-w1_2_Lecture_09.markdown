@@ -1,0 +1,27 @@
+---
+
+layout: post
+title: "Lecture 8: Ecuaciones de Valor."
+author: "Mario H. González-Sauri"
+date: "2024-04-09"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+
+**Tema 3: Interés Compuesto.**
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/FIN1403_08.html)
+
+
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_08.html" download>
+  Bajar Presentación
+</a>
