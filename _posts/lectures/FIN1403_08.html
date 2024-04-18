@@ -3405,24 +3405,22 @@ VF = VP \times (1 + r)^t
 
 </article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (1/1)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-11">
 
-<p>Supongamos que se realizan las siguientes transacciones financieras:</p>
+<p>Supongamos que se realizan las siguientes transacciones financieras, y se busca determinar el valor del último flujo desconocido \(X\) utilizando una tasa de interés simple del 5%.</p>
 
 <ul>
 <li>Flujos de Efectivo Entrantes (In):
 
 <ul>
-<li>\(FV_{\text{in},1} = \$500\) en 2 años</li>
-<li>\(FV_{\text{in},2} = \$800\) en 4 años</li>
+<li>\(VF_{\text{in},1} = \$500\) en 2 años</li>
+<li>\(VF_{\text{in},2} = \$800\) en 4 años</li>
 </ul></li>
 <li>Flujos de Efectivo Salientes (Out):
 
 <ul>
-<li>\(FV_{\text{out},1} = \$300\) en 3 años</li>
-<li>\(FV_{\text{out},2} = \$600\) en 5 años</li>
+<li>\(VF_{\text{out},1} = \$300\) en 3 años</li>
+<li>\(VF_{\text{out},2} = \$600\) en 5 años</li>
 </ul></li>
 </ul>
-
-<p>Se busca determinar el valor del último flujo desconocido \(X\) para que la ecuación de valor se cumpla, utilizando una tasa de interés simple del 5%.</p>
 
 </article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (1/2)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-12">
 
@@ -3444,6 +3442,11 @@ VF = VP \times (1 + r)^t
 <li>El el primer año de inicia con un saldo de $1000 en una cuenta de inversión con una tasa de interés compuesto del 8%.</li>
 <li>Adicionalmente, recibe un bono periódico de fin de año de $200 al final de cada año durante los próximos 5 años, con la misma tasa de interés.</li>
 </ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (2/2) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-22-interés-compuesto">
+
+<ul>
 <li><strong>Deudas (Salidas de Dinero):</strong>
 
 <ul>
@@ -3454,20 +3457,139 @@ VF = VP \times (1 + r)^t
 
 <p>El objetivo es calcular el valor futuro neto de todas las inversiones y deudas al final de los 5 años.</p>
 
-</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (2/2) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-22-interés-compuesto">
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (2/3) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-23-interés-compuesto">
 
-<p>\[ 1000 \times (1.08)^5 + 200 \times \left( \sum_{i=1}^{5} (1.08)^i \right) - 5000 \times \left( \sum_{i=1}^{5} (1.10)^i \right) - 3000 \times (1.10)^5 + X = 0 \]</p>
+<p>\[ 1000 \times (1.08)^5 + 200 \times \left( \sum_{i=1}^{5} (1.08)^i \right) \\
+- 5000 \times \left( \sum_{i=1}^{5} (1.10)^i \right) \\  
+- 3000 \times (1.10) + X = 0 \]</p>
 
 <pre class = 'prettyprint lang-r'>((1000 * (1.08) ^ 5) + (200 * sum((1.08) ^ (1:5))) 
- - (5000 * sum((1.10) ^(1:5))) - (3000 * (1.10) ^ 5))</pre>
+ - (5000 * sum((1.10) ^(1:5))) - (3000 * (1.10) ^ 1))</pre>
 
-<pre >## [1] -35673.07</pre>
+<pre >## [1] -34141.54</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (3/1) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-31-interés-compuesto">
+
+<p>Supongamos que una persona está planificando su retiro y tiene las siguientes transacciones financieras:</p>
+
+<ul>
+<li><strong>Inversiones (Entradas de Dinero):</strong>
+
+<ul>
+<li>Inicia con un saldo de $1500 en una cuenta de inversión con una tasa de interés compuesto del 6%.</li>
+<li>Recibe un bono anual de $300 al final de cada año durante los próximos 7 años, con la misma tasa de interés.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (3/2) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-32-interés-compuesto">
+
+<ul>
+<li><strong>Deudas (Salidas de Dinero):</strong>
+
+<ul>
+<li>Tiene una deuda periódica pendiente de $2000 que debe pagar al final de cada año durante los próximos 5 años con una tasa de interés compuesto del 8%.</li>
+<li>Adquiere un préstamo adicional de $1000 que debe pagar al final del período con una tasa de interés compuesto del 8%.</li>
+</ul></li>
+</ul>
+
+<p>El objetivo es calcular el valor futuro neto de todas las inversiones y deudas al final de los 7 años.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (3/3) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-33-interés-compuesto">
+
+<pre class = 'prettyprint lang-r'>((1500 * (1.06) ^ 7) + (300 * sum((1.06) ^ (1:7))) 
+ - (2000 * sum((1.08) ^(1:5))) - (1000 * (1.08) ^ 5))</pre>
+
+<pre >## [1] -9216.5</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (4/1) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-41-interés-compuesto">
+
+<p>Supongamos que una empresa está evaluando sus inversiones y deudas para los próximos años:</p>
+
+<p><strong>Inversiones (Entradas de Dinero):</strong> - Invierte $2000 en un proyecto con una tasa de interés compuesto del 10% durante 3 años. - Recibe un ingreso anual de $500 al final de cada año durante los próximos 4 años, con la misma tasa de interés.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (4/2) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-42-interés-compuesto">
+
+<p><strong>Deudas (Salidas de Dinero):</strong></p>
+
+<ul>
+<li>Tiene una deuda pendiente de $3000 que debe pagar al final de cada año durante los próximos 5 años con una tasa de interés compuesto del 12%.</li>
+<li>Adquiere un préstamo adicional de $1500 que debe pagar al final del período con una tasa de interés compuesto del 12%.</li>
+</ul>
+
+<p>El objetivo es calcular el valor futuro neto de todas las inversiones y deudas al final de los 5 años.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro con un Flujo Desconocido, Ejemplo (4/3) (Interés Compuesto)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-con-un-flujo-desconocido-ejemplo-43-interés-compuesto">
+
+<pre class = 'prettyprint lang-r'>((2000 * (1.10) ^ 3) + (500 * sum((1.10) ^ (1:4))) 
+ - (3000 * sum((1.12) ^(1:5))) - (1500 * (1.12) ^ 5))</pre>
+
+<pre >## [1] -18774.53</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro en Periodos de Capitalización Diferentes (5/1)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-en-periodos-de-capitalización-diferentes-51">
+
+<p>Supongamos que una empresa está evaluando un proyecto de inversión a largo plazo con los siguientes flujos de efectivo:</p>
+
+<ul>
+<li><strong>Inversiones (Entradas de Dinero):</strong>
+
+<ul>
+<li>Invierte $5000 al inicio del proyecto con una tasa de interés compuesto del 6% capitalizado trimestralmente.</li>
+<li>Recibe un ingreso de $1500 al final del primer año con una tasa de interés compuesto del 8% capitalizado anualmente.</li>
+<li>Recibe un ingreso de $2000 al final del segundo año con una tasa de interés compuesto del 10% capitalizado semestralmente.</li>
+<li>Recibe un ingreso de $3000 al final del tercer año con una tasa de interés compuesto del 12% capitalizado mensualmente.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro en Periodos de Capitalización Diferentes (5/2)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-en-periodos-de-capitalización-diferentes-52">
+
+<ul>
+<li><strong>Deudas (Salidas de Dinero):</strong>
+
+<ul>
+<li>Paga una deuda de $2000 al final del segundo año con una tasa de interés compuesto del 9% capitalizado anualmente.</li>
+<li>Paga una deuda de $2500 al final del tercer año con una tasa de interés compuesto del 11% capitalizado trimestralmente.</li>
+<li>Adquiere un préstamo adicional de $3000 al inicio del proyecto con una tasa de interés compuesto del 7% capitalizado mensualmente.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro en Periodos de Capitalización Diferentes (5/3)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-en-periodos-de-capitalización-diferentes-53">
+
+<p>Para calcular el valor futuro neto de todas las inversiones y deudas al final del tercer año, primero debemos calcular la tasa de interés efectiva para cada flujo y luego estimar el valor futuro de todos los flujos al final del período.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro en Periodos de Capitalización Diferentes (5/4)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-en-periodos-de-capitalización-diferentes-54">
+
+<pre class = 'prettyprint lang-r'>(1 + 0.06/4)^(4*1) - 1</pre>
+
+<pre >## [1] 0.06136355</pre>
+
+<pre class = 'prettyprint lang-r'>(1 + 0.10/2)^(2*1) - 1</pre>
+
+<pre >## [1] 0.1025</pre>
+
+<pre class = 'prettyprint lang-r'>(1 + 0.11/4)^(4*1) - 1</pre>
+
+<pre >## [1] 0.1146213</pre>
+
+<pre class = 'prettyprint lang-r'>(1 + 0.07/12)^(12*1) - 1</pre>
+
+<pre >## [1] 0.07229008</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Futuro en Periodos de Capitalización Diferentes (5/5)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-futuro-en-periodos-de-capitalización-diferentes-55">
+
+<pre class = 'prettyprint lang-r'>5000*(1+0.0614)^3 + 
+  1500*(1+0.08)^3 + 
+  2000*(1+0.103)^2 - 
+  2000*(1+0.09)^2 - 
+  2500*(1+0.115) - 
+  3000*(1+0.72)^3</pre>
+
+<pre >## [1] -10127.55</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Revisión</h2></hgroup><article  id="revisión">
 
 </article></slide><slide class=""><hgroup><h2>Revisión</h2></hgroup><article  id="revisión-1">
 
-<pre >## Versión: 08/04/2024</pre>
+<pre >## Versión: 16/04/2024</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Bibliografía</h2></hgroup><article  id="bibliografía">
 
