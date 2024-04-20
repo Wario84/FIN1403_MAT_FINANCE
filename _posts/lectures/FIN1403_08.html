@@ -3581,15 +3581,110 @@ VF = VP \times (1 + r)^t
   2000*(1+0.103)^2 - 
   2000*(1+0.09)^2 - 
   2500*(1+0.115) - 
-  3000*(1+0.72)^3</pre>
+  3000*(1+0.0723)^3</pre>
 
-<pre >## [1] -10127.55</pre>
+<pre >## [1] 1438.913</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/1)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-61">
+
+<p>Imagina que deseas evalular un proyecto de desarrollo de software y tienes las siguientes transacciones financieras:</p>
+
+<ul>
+<li><strong>Inversiones (Entradas de Dinero):</strong>
+
+<ul>
+<li>Durante el inicio del primer año se recibe un anticipo de 80000 en el primer año en desarrollo de software con una tasa de interés compuesta del 6% anual.</li>
+<li>Recibe un contrato de 70000 desde el año 3 hasta el 10, con una tasa de interés compuesta del 6.5% anual capitalizado trimestralmente.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/1)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-61-1">
+
+<ul>
+<li><strong>Deudas (Salidas de Dinero):</strong>
+
+<ul>
+<li>Tiene una deuda periódica pendiente de 90000 que debe pagar al final de cada año durante los próximos 8 años con una tasa de interés compuesta del 7.5% anual.</li>
+<li>Adquiere un préstamo adicional de 45000 en el último año con una tasa de interés compuesta del 7.5% anual capitalizado mensualmente.</li>
+</ul></li>
+</ul>
+
+<p>El objetivo es calcular el valor presente neto de todas las inversiones y deudas al inicio del proyecto.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/2)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-62">
+
+<ul>
+<li>Para evaluar el proyecto en VP, se debe calcular cada flujo tomando en cuenta el punto focal al inicio del proyecto.</li>
+<li>Por ejemplo, en el primer año, hay una entrada de \(80000.00\), con \(r=0.06\), y \(t=1\)</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>80000/(1+0.06)^1</pre>
+
+<pre >## [1] 75471.7</pre>
+
+<ul>
+<li>El segundo flujo, primero anualizamos el interés:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>(1+.065/4)^4 - 1</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/3)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-63">
+
+<ul>
+<li>Esta segunda entrada es periódica desde el año 3 hasta el año 10. Es decir, se toma el inicio del projecto <strong>(punto focal del valor presente)</strong>, hasta cada una de las entradas:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>80000/(1 + 0.067)^3 + 80000/(1 + 0.067)^4 + 
+  80000/(1 + 0.067)^5 + 80000/(1 + 0.067)^6 + 
+  80000/(1 + 0.067)^7 + 80000/(1 + 0.067)^8 + 
+  80000/(1 + 0.067)^9 + 80000/(1 + 0.067)^10</pre>
+
+<pre >## [1] 424516.8</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/4)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-64">
+
+<ul>
+<li>Pasamos a las salidas, hay una salida periódica de \(90000.00\) desde el año 1 al 8, con \(r=0.075\):</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>90000/(1 + 0.075)^1 + 90000/(1 + 0.075)^2 + 
+  90000/(1 + 0.075)^3 + 90000/(1 + 0.075)^4 + 
+  90000/(1 + 0.075)^5 + 90000/(1 + 0.075)^6 + 
+  90000/(1 + 0.075)^7 + 90000/(1 + 0.075)^8</pre>
+
+<pre >## [1] 527157.3</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/5)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-65">
+
+<ul>
+<li>Por último, se adquiere un préstamo adicional de 45000 en el último año, con \(r=0.075\), capitalizado mensualmente, entonces, primero anualizamos:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>(1+.075/12)^12 - 1</pre>
+
+<pre >## [1] 0.0776326</pre>
+
+<ul>
+<li>Luego, calculamos el VP del último flujo:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>45000*(1+0.078)^10</pre>
+
+<pre >## [1] 95367.44</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema 3.5 Ecuación de Valor: Valor Presente en Periodos de Capitalización Diferentes (6/6)</h2></hgroup><article  id="tema-3.5-ecuación-de-valor-valor-presente-en-periodos-de-capitalización-diferentes-66">
+
+<p>El saldo neto en valor presente del ejercicio:</p>
+
+<pre class = 'prettyprint lang-r'>(75471.7+424516.8)-(527157.3+95367.44)</pre>
+
+<pre >## [1] -122536.2</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Revisión</h2></hgroup><article  id="revisión">
 
 </article></slide><slide class=""><hgroup><h2>Revisión</h2></hgroup><article  id="revisión-1">
 
-<pre >## Versión: 16/04/2024</pre>
+<pre >## Versión: 20/04/2024</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Bibliografía</h2></hgroup><article  id="bibliografía">
 
